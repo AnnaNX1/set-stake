@@ -1,17 +1,17 @@
 {
-  "name": "set-stake",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@polkadot/keyring": "^10.2.6",
     "@unique-nft/accounts": "^0.3.4",
-    "@unique-nft/sdk": "^0.2.5"
+    "@unique-nft/sdk": "^0.2.5",
+    "events": "^3.3.0",
+    "parcel": "^2.8.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "process": "^0.11.10"
   }
 }
