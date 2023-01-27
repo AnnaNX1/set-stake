@@ -1,8 +1,8 @@
 import { Sdk } from '@unique-nft/sdk';
 import { PolkadotProvider } from '@unique-nft/accounts/polkadot';
 
-const baseUrl = 'https://rest.quartz.uniquenetwork.dev/v1';
-// const baseUrl = 'https://rest.opal.uniquenetwork.dev/v1';
+const baseUrl = 'https://rest.unique.network/quartz/v1';
+// const baseUrl = 'https://rest.unique.network/opal/v1';
 
 async function setStake(client, address, amountInit) {
   const { decimals } = await client.common.chainProperties();
@@ -25,7 +25,7 @@ const getBalanceAndStake = async (amount) => {
   const provider = new PolkadotProvider();
   await provider.init();
   const list = await provider.getAccounts();
-  const signer = list[3];
+  const signer = list[0];
 
   // create client
   const options = {
