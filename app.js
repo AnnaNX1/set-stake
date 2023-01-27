@@ -1,8 +1,8 @@
 import { Sdk } from '@unique-nft/sdk';
 import { PolkadotProvider } from '@unique-nft/accounts/polkadot';
 
-const baseUrl = 'https://rest.unique.network/quartz/v1';
-// const baseUrl = 'https://rest.unique.network/opal/v1';
+const baseUrl = 'https://rest.quartz.uniquenetwork.dev/v1';
+// const baseUrl = 'https://rest.opal.uniquenetwork.dev/v1';
 
 async function setStake(client, address, amountInit) {
   const { decimals } = await client.common.chainProperties();
